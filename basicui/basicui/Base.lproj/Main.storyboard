@@ -52,18 +52,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHF-xu-pA9">
+                                <rect key="frame" x="24" y="429" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="27/7/2019" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="roS-XQ-rcF">
+                                <rect key="frame" x="24" y="466" width="366" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="O1p-lk-LUL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ENr-5Q-86b" secondAttribute="trailing" constant="24" id="0Xt-La-rxq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="roS-XQ-rcF" secondAttribute="trailing" constant="24" id="2b5-3s-sJb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pdk-N1-a2y" secondAttribute="trailing" constant="24" id="DA4-fW-D7G"/>
                             <constraint firstItem="vnJ-SM-Wae" firstAttribute="top" secondItem="pdk-N1-a2y" secondAttribute="bottom" constant="36" id="G1S-by-BC2"/>
+                            <constraint firstItem="IHF-xu-pA9" firstAttribute="top" secondItem="ENr-5Q-86b" secondAttribute="bottom" constant="36" id="OUn-cf-Qqi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vnJ-SM-Wae" secondAttribute="trailing" constant="24" id="UJs-8A-rBP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WBf-6H-Zfa" secondAttribute="trailing" constant="24" id="VPr-YS-GwJ"/>
+                            <constraint firstItem="IHF-xu-pA9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Vc1-P5-Z3Z"/>
                             <constraint firstItem="pdk-N1-a2y" firstAttribute="top" secondItem="WBf-6H-Zfa" secondAttribute="bottom" constant="16" id="Wdr-ji-yDR"/>
+                            <constraint firstItem="roS-XQ-rcF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Yfb-IS-djS"/>
                             <constraint firstItem="WBf-6H-Zfa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ZxS-GL-dov"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IHF-xu-pA9" secondAttribute="trailing" constant="24" id="fit-uQ-irf"/>
                             <constraint firstItem="pdk-N1-a2y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="hsw-VJ-xDJ"/>
                             <constraint firstItem="vnJ-SM-Wae" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="jC1-nc-cI4"/>
+                            <constraint firstItem="roS-XQ-rcF" firstAttribute="top" secondItem="IHF-xu-pA9" secondAttribute="bottom" constant="16" id="jwx-RS-pRa"/>
                             <constraint firstItem="ENr-5Q-86b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="oCB-RK-aiU"/>
                             <constraint firstItem="ENr-5Q-86b" firstAttribute="top" secondItem="vnJ-SM-Wae" secondAttribute="bottom" constant="64" id="wq1-mB-WYY"/>
                             <constraint firstItem="WBf-6H-Zfa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="xUw-8S-WML"/>
@@ -72,6 +93,7 @@
                     </view>
                     <connections>
                         <outlet property="lblShowName" destination="ENr-5Q-86b" id="xvu-HD-bn9"/>
+                        <outlet property="tfDateOfBirth" destination="roS-XQ-rcF" id="7OG-Kx-ap5"/>
                         <outlet property="tfName" destination="pdk-N1-a2y" id="Mfx-Wm-o9m"/>
                     </connections>
                 </viewController>
