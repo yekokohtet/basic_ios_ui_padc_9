@@ -1,0 +1,6 @@
+framework module Pods_basicui {
+  umbrella header "Pods-basicui-umbrella.h"
+
+  export *
+  module * { export * }
+}
